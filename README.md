@@ -1,24 +1,18 @@
-# langchain-learning
+## How to run
 
-This project demonstrates a simple setup for experimenting with LangChain and related libraries.
+First, you should install the uv first, follow this install link: https://docs.astral.sh/uv/getting-started/installation/
 
-## python-version
-
-Goto the folder /python
-
-## I change the language to learn langchain from python to typescript(Bun)
-
-### How to run in local
-
-Prepare your environment first
-
+setup the environment
 ```sh
 cp .env.example .env
 ```
+add the openapi, tavily, langsmith keys to the .env file
 
-Update the openai api key, langsmith, tavily,... in file .env
+To run the example script with uv:
 
 ```sh
-bun install
-bun run index.ts
+uv venv
+source .venv/bin/activate
+uv sync
+uv run search-agent.py
 ```

@@ -1,34 +1,33 @@
-# dependencies (bun install)
-node_modules
+# Python-generated files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
-# output
-out
-dist
-*.tgz
-
-# code coverage
-coverage
-*.lcov
-
-# logs
-logs
-_.log
-report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
-
-# dotenv environment variable files
-.env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
-
-# caches
-.eslintcache
-.cache
-*.tsbuildinfo
-
-# IntelliJ based IDEs
-.idea
-
-# Finder (MacOS) folder config
+# uv-specific
+.venv/
+# Consider if you want to enforce a specific Python version across environments
+.python-version 
+# Include this for application projects, exclude for library projects
+uv.lock 
+# Editor/IDE specific
+# IntelliJ IDEA / PyCharm
+.idea/ 
+*.sublime-project
+*.sublime-workspace
+# macOS
 .DS_Store
+# Windows
+Thumbs.db 
+
+# Operating System files
+# Environment variables
+.env 
+
+# Logs and temporary files
+*.log
+tmp/

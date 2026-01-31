@@ -8,5 +8,8 @@
     "langchain",
     "langsmith",
     "tavily"
-  ]
+  ],
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  }
 }
